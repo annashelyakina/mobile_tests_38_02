@@ -48,8 +48,20 @@ tasks.withType(Test) {
         }
     }
 }
-tasks.register('mobile_tests', Test) {
+tasks.register('browserstack_tests', Test) {
     useJUnitPlatform {
-        includeTags("mobile_tests")
+        includeTags("browserstack_tests")
+    }
+}
+
+tasks.register('emulation_tests', Test) {
+    useJUnitPlatform {
+        includeTags("emulation_tests")
+    }
+}
+
+tasks.register('real_tests', Test) {
+    useJUnitPlatform {
+        includeTags("real_tests")
     }
 }
