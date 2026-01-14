@@ -13,7 +13,8 @@ public class OnBoardingTestsForEmulation extends TestBaseEmulation {
     @Test
     @DisplayName("Successful navigation through onboarding screens")
     public void checkOnBoardingScreenEng() {
-        onBoardingScreen.checkFirstOnboardingScreenEng()
+        onBoardingScreen
+                .checkFirstOnboardingScreenEng()
                 .checkSecondOnboardingScreenEng()
                 .checkThirdOnboardingScreenEng()
                 .checkFourthOnboardingScreenEng()
