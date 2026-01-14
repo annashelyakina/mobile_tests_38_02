@@ -37,7 +37,7 @@ public class OnBoardingScreen {
     @Step("Check fourth onboarding screen in Russian")
     public OnBoardingScreen checkFourthOnboardingScreenRu(){
         $(id("org.wikipedia.alpha:id/primaryTextView")).shouldBe(text(Constants.RU_TEXT_IN_FOURTH_SCREEN));
-        $(id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")).click();
+        $(id("org.wikipedia.alpha:id/fragment_onboarding_done_button")).click();
 
         return this;
     }
@@ -76,7 +76,7 @@ public class OnBoardingScreen {
     @Step("Check fourth onboarding screen in English")
     public OnBoardingScreen checkFourthOnboardingScreenEng(){
         $(id("org.wikipedia.alpha:id/primaryTextView")).shouldBe(text(Constants.ENG_TEXT_IN_FOURTH_SCREEN));
-        $(id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")).click();
+        $(id("org.wikipedia.alpha:id/fragment_onboarding_done_button")).click();
 
         return this;
     }
