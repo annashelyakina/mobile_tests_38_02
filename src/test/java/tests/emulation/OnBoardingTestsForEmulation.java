@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import screens.OnBoardingScreen;
 
-@Tag("emulation_tests")
+@Tag("emulation")
 public class OnBoardingTestsForEmulation extends TestBaseEmulation {
 
     OnBoardingScreen onBoardingScreen = new OnBoardingScreen();

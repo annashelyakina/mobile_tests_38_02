@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import screens.OnBoardingScreen;
 
-@Tag("real_tests")
+@Tag("real")
 public class OnBoardingTestsForReal extends TestBaseReal {
 
     OnBoardingScreen onBoardingScreen = new OnBoardingScreen();

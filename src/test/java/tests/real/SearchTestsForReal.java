@@ -7,7 +7,7 @@ import screens.SearchScreen;
 
 import static com.codeborne.selenide.Selenide.*;
 
-@Tag("real_tests")
+@Tag("real")
 public class SearchTestsForReal extends TestBaseReal {
 
     SearchScreen searchScreen = new SearchScreen();

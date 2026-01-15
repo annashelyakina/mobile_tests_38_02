@@ -7,7 +7,7 @@ import screens.SearchScreen;
 
 import static com.codeborne.selenide.Selenide.*;
 
-@Tag("emulation_tests")
+@Tag("emulation")
 public class SearchTestsForEmulation extends TestBaseEmulation {
 
     SearchScreen searchScreen = new SearchScreen();

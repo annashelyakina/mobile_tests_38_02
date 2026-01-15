@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import screens.SearchScreen;
 
-@Tag("browserstack_tests")
+@Tag("browserstack")
 public class SearchTestsForBrowserStack extends TestBaseBrowserStack {
 
     SearchScreen searchScreen = new SearchScreen();
