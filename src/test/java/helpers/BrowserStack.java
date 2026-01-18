@@ -2,7 +2,7 @@ package helpers;
 
 import static io.restassured.RestAssured.given;
 
-public class Browserstack {
+public class BrowserStack {
 
     // curl -u "anna_ds6Jvj:BvFsNCs2kcYFxy1fkBb3" -X GET "https://api.browserstack.com/app-automate/sessions/b68b008e4a683bb67f434bad3a28280c19ef871d.json"
     // automation_session.video_url

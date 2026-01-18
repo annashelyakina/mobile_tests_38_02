@@ -7,7 +7,7 @@ import org.aeonbits.owner.Config;
         "classpath:browserstack.properties"
 })
 
-public interface WebDriverConfig extends Config {
+public interface BrowserStackConfig extends Config {
 
     @Key("user")
     String getUser();

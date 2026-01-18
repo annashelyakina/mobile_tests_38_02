@@ -1,7 +1,7 @@
 package drivers;
 
 import com.codeborne.selenide.WebDriverProvider;
-import config.WebDriverConfig;
+import config.BrowserStackConfig;
 import groovyjarjarantlr4.v4.runtime.misc.NotNull;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.Capabilities;
@@ -12,11 +12,11 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class BrowserstackDriver implements WebDriverProvider {
+public class BrowserStackDriver implements WebDriverProvider {
 
-    private final WebDriverConfig config;
-    public BrowserstackDriver() {
-        this.config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
+    private final BrowserStackConfig config;
+    public BrowserStackDriver() {
+        this.config = ConfigFactory.create(BrowserStackConfig.class, System.getProperties());
     }
 
     @NotNull

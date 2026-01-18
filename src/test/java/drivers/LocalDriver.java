@@ -1,7 +1,7 @@
 package drivers;
 
 import com.codeborne.selenide.WebDriverProvider;
-import config.WebDriverConfig;
+import config.LocalConfig;
 import groovyjarjarantlr4.v4.runtime.misc.NotNull;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
@@ -21,9 +21,9 @@ import static org.apache.commons.io.FileUtils.copyInputStreamToFile;
 
 public class LocalDriver implements WebDriverProvider {
 
-    private final WebDriverConfig config;
+    private final LocalConfig config;
     public LocalDriver() {
-        this.config = ConfigFactory.create(WebDriverConfig.class, System.getProperties());
+        this.config = ConfigFactory.create(LocalConfig.class, System.getProperties());
     }
 
 
@@ -36,7 +36,7 @@ public class LocalDriver implements WebDriverProvider {
         options
                 .setAutomationName(ANDROID_UIAUTOMATOR2)
                 .setPlatformName(ANDROID)
-                .setPlatformVersion(config.getOsVersion())
+               .setPlatformVersion(config.getOsVersion())
                 .setDeviceName(config.getDevice())
                 .setApp(getAppPath())
                 .setAppPackage("org.wikipedia.alpha")
